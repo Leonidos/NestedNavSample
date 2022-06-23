@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nested_nav_graph"
+    app:startDestination="@id/NPF0">
+
+    <fragment
+        android:id="@+id/NPF0"
+        android:name="com.pandacoder.nestednavsample.NPF0"
+        android:label="NPF0" >
+        <action
+            android:id="@+id/action_NPF0_to_NPF2"
+            app:destination="@id/NPF2" />
+    </fragment>
+    <fragment
+        android:id="@+id/NPF1"
+        android:name="com.pandacoder.nestednavsample.NPF1"
+        android:label="NPF1" />
+    <fragment
+        android:id="@+id/NPF2"
+        android:name="com.pandacoder.nestednavsample.NPF2"
+        android:label="NPF2" />
+</navigation>
